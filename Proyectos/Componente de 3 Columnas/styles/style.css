@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+:root{
+    --componente1: hsl(31, 77%, 52%);
+    --componente2: hsl(184, 100%, 22%);
+    --componente3: hsl(179, 100%, 13%);
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    font-size: 15px;
+    font-weight: normal;
+}
+.titulo{
+font-family: 'Big Shoulders Display';
+text-transform: uppercase;
+}
+.card{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+@media (min-width: 1440px){
+    .card{
+        display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 90%;
+    }
+}
+@media (max-width:1440px) {
+    .card{
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+}
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+
+}
+@media (min-width:1440px){
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+.component{
+height: auto;
+width: 250px;
+background-color: greenyellow;
+text-align: left;
+color:white;
+padding-top: 2rem;
+padding-left: 2.0rem;
+}
+
+
+.component:last-child{
+    border-radius:0rem 0rem .5rem .5rem;
+    }
+    .component:first-child{
+        border-radius: .5rem .5rem 0rem 0rem;
+    }
+@media (min-width:768px){
+    .component{
+        width:250px;
+        padding-top:2.5rem;
+        padding-left: 2.5rem;
+    }
+    .component:last-child{
+        border-radius:0rem .5rem .5rem 0rem;
+        }
+        .component:first-child{
+            border-radius: .5rem 0rem 0rem .5rem;
+        }
+    }
+
+.component1{
+    background-color: var(--componente1);
+}
+.component2{background-color: var(--componente2);}
+.component3{background-color: var(--componente3);}
+
+.texto{
+    font-family: 'Lexend Deca', sans-serif;
+    padding-right:1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    padding-bottom:1rem;
+}
+@media (min-width:1440px) {
+    .texto{
+        padding-bottom: 4rem;
+        padding-right:2.5rem;
+    }
+}
+button{
+    font-family: 'Lexend Deca', sans-serif;
+border-style: 2px solid;
+width: 150px;
+height: 50px;
+border-radius: 10rem;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+@media (min-width:1440px){
+    button{
+        margin-bottom: 3rem;
+    }
+}
+.boton1{
+color:var(--componente1);
+border:2px solid var(--componente1);
+}
+.boton1:hover{
+    background-color: var(--componente1);
+    color:white;
+   border:2px solid white;
+}
+.boton2{
+color:var(--componente2);
+border:2px solid var(--componente2);
+}
+.boton2:hover{
+    background-color: var(--componente2);
+    color:white;
+   border:2px solid white;
+}
+.boton3{
+    color: var(--componente3);
+    border:2px solid var(--componente3);
+}
+.boton3:hover{
+    background-color: var(--componente3);
+    color:white;
+   border:2px solid white;
+}
+/*Credits*/
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    font-family: 'JetBrains Mono', monospace;}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    
+    text-decoration: none;
+}
+.attribution a:last-child:hover { 
+    transition: 1s;
+    color:orange;
+}
+@media (max-width:1440px) {
+    .attribution{
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+}
