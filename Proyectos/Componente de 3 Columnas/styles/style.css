@@ -38,6 +38,12 @@ text-transform: uppercase;
         margin-top: 4rem;
         margin-bottom: 6rem;
     }
+    .image{
+        padding-bottom: 1rem;
+    }
+}
+.image{
+    padding-top: 1rem;
 }
 .container{
     display: grid;
@@ -53,6 +59,7 @@ text-transform: uppercase;
 }
 
 }
+
 .component{
 height: auto;
 width: 250px;
@@ -92,13 +99,14 @@ padding-left: 2.0rem;
 
 .texto{
     font-family: 'Lexend Deca', sans-serif;
-    padding-right:1.5rem;
-    line-height: 1.5rem;
+    padding-right:1rem;
+    line-height: 1.75rem;
     font-weight: 400;
     padding-bottom:1rem;
 }
 @media (min-width:1440px) {
     .texto{
+        padding-top:.1rem;
         padding-bottom: 4rem;
         padding-right:2.5rem;
     }
