@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+:root{
+    --bg-color:hsl(30, 38%, 92%);
+
+
+}
+
+html,body{
+    background-color: var(--bg-color);
+    height: 100%;
+    margin: 0;
+    padding:0;
+    font-size: 14px;
+}
+
+h1{
+    margin:0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.card{
+    width: 250px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    border-radius: 0 0 .5rem .5rem;
+
+}
+.image-container{  
+    border-radius: .5rem .5rem 0 0;
+    width: 250px;
+    height: 175px;
+    background-image: url("/images/image-product-mobile.jpg");
+    background-size: contain;
+}
+
+@media (min-width:1440px) {
+    .card{
+        border-radius: .5rem;
+        width: 525px;
+        height: 375px;
+        grid-template-columns: repeat(2,50%);
+
+    }
+    .image-container{
+        border-radius: .5rem 0 0 .5rem;
+        height: 375px;
+        background-image: url("/images/image-product-desktop.jpg");
+       
+    }
+    .titulo-container{
+        padding-right: 32px;
+        padding-bottom: 4px;
+    }
+    .upper-label{
+        padding-top: 8px;
+        font-size: 12px;
+        padding-left: auto;
+    }
+    
+}
+
+.upper-label{
+    margin: 0;
+    text-transform: uppercase;
+   font-size: 8px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat',serif;
+    color:hsl(228, 12%, 48%);
+   padding-left: 4px;
+    padding-bottom: 12px;
+    }
+
+    
+.product-info{
+margin: 0;
+padding:12px;
+padding-top: 20px;
+
+}
+.text-container{
+    padding-left: 4px;
+}
+
+.titulo{
+    font-size:24px;
+    line-height: 24px;
+    font-family: 'Fraunces', serif;
+    margin: 0; 
+}
+.texto{
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat',serif;
+    line-height: 20px;
+}
+
+.precio{
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+}
+.normal{
+    font-family: 'Fraunces', serif;
+color:hsl(158, 36%, 37%);
+}
+.descuento{
+    font-size: 14px;
+    font-family: 'Montserrat',serif;
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+    position: relative;
+    top:10px;
+    left: 20px;
+}
+.texto{
+    text-align: left;
+    font-size: 12px;
+}
+@media (min-width:1440px) {
+    .titulo{
+       font-size: 32px;
+        line-height: 32px;
+    }
+    .texto{
+        font-size: normal;
+        text-align: initial;
+        padding-right:40px;
+    }
+    
+}
+.boton{
+padding-top: 1.5rem;
+}
+.button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Montserrat',serif;
+    width: 200px;
+    height: 40px;
+    background-color: hsl(158, 36%, 37%);
+     border-bottom: 12px;
+}
+
+/*Credits*/
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    font-family: 'JetBrains Mono', monospace;}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    
+    text-decoration: none;
+}
+.attribution a:last-child:hover { 
+    transition: 1s;
+    color:orange;
+}
+@media (max-width:1440px) {
+    .attribution{
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+}
